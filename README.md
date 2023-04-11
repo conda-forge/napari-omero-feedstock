@@ -1,11 +1,11 @@
-About napari-omero
-==================
+About napari-omero-feedstock
+============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/napari-omero-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/tlambert03/napari-omero
 
-Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/napari-omero-feedstock/blob/main/LICENSE.txt)
+Package license: GPL-2.0-or-later
 
 Summary: napari/OMERO interoperability
 
