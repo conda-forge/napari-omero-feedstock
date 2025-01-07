@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
   sha256: 4ed29e255dfbcb4c40e6184a8d1065ff8603d4f4d5f3bf072a8e6fc5940d83ec
 
 build:
@@ -14,19 +14,19 @@ build:
     - napari-omero = napari_omero.__main__:main
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
     - pip
-    - python >=3.7,<=3.10
+    - python {{ python_min }}
     - hatchling
     - hatch-vcs
   run:
     - napari >=0.4.3
     - omero-py
     - omero-rois
-    - python >=3.7,<=3.10
+    - python >={{ python_min }},<3.11a0
 
 test:
   imports:
@@ -42,6 +42,7 @@ test:
     # - napari-omero  # [not linux]
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/tlambert03/napari-omero
