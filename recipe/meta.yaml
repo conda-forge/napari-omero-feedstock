@@ -42,6 +42,7 @@ test:
     # - napari-omero  # [not linux]
   requires:
     - pip
+    - pyqt
     - python {{ python_min }}
 
 about:
