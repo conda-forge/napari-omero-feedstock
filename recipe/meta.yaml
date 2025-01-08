@@ -27,6 +27,7 @@ requirements:
     - omero-py
     - omero-rois
     - python >={{ python_min }},<3.11a0
+    - Pillow>=10.0.0 # not actually needed... trying to fix missing pin in omero-py recipe
 
 test:
   imports:
