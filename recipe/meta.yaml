@@ -23,7 +23,7 @@ requirements:
     - hatchling
     - hatch-vcs
   run:
-    - napari >=0.4.3
+    - napari >=0.4.13
     - omero-py
     - omero-rois
     - python >={{ python_min }},<3.13a0
