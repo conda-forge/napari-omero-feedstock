@@ -26,8 +26,7 @@ requirements:
     - napari >=0.4.3
     - omero-py
     - omero-rois
-    - python >={{ python_min }},<3.11a0
-    - Pillow >=10.0.0 # not actually needed... trying to fix missing pin in omero-py recipe
+    - python >={{ python_min }},<3.13a0
 
 test:
   imports:
