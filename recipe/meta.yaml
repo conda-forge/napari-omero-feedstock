@@ -24,6 +24,7 @@ requirements:
     - hatch-vcs
   run:
     - napari >=0.4.13
+    - omero-marshal
     - omero-py
     - omero-rois
     - python >={{ python_min }},<3.13a0
