@@ -23,7 +23,7 @@ requirements:
     - hatchling
     - hatch-vcs
   run:
-    - napari >=0.4.13
+    - napari >=0.5.0
     - omero-marshal
     - omero-py
     - omero-rois
