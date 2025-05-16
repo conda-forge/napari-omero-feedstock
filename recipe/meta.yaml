@@ -1,5 +1,5 @@
 {% set name = "napari-omero" %}
-{% set version = "0.5.0" %}
+{% set version = "0.5.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 2b61ac5f217660c00a5710171f56549f80bb324c05aeb6f896a22befcdf492de
+  sha256: b06e00577371588e7dd21e35e221f37800b36da6f062fe9316544986923ef6df
 
 build:
   entry_points:
